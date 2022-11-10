@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BSCSFall2022App</string>
+    <string name="uni_title">University of Central Punjab</string>
+    <string name="cs_dept_text">CS Dept</string>
+    <string name="se_depart_text">SE Dept</string>
+    <string name="adp_dept_text">ADP</string>
+    <string name="developed_by_unknown_tv">Developed by Unknown</string>
+    <string name="enter_the_first_value_et">Enter the first value</string>
+    <string name="enter_the_second_value_et">Enter the second value</string>
+    <string name="calculate_btn">Calculate</string>
+    <string name="result_tv">Result:</string>
+    <string name="lecture_2_btn">Lecture 2</string>
+    <string name="lecture_3_btn">Lecture 3</string>
+    <string name="enter_the_info_here_hint">Enter the info here</string>
+    <string name="send_data_btn">Send Data</string>
+    <string name="our_data_tv">Our Data</string>
+    <string name="lecture_4_btn">Lecture 4 Data Passing</string>
+    <string name="lecture_4_adapter_btn">Lecture 4 Adapter Working</string>
+    <string name="enter_the_message_here_et">Enter the message here</string>
+    <string name="send_sms">SEND SMS</string>
+
+
+</resources>

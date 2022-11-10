@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_relative_layout"
+    android:background="@color/uni_background"
+    tools:context=".Lec2.Lec2Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_top_tv"
+        android:text="@string/uni_title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/uni_logo"
+        android:layout_below="@id/main_top_tv"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_child_rl"
+        android:layout_below="@id/uni_logo"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_se_btn"
+            android:text="@string/se_depart_text"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_adp_btn"
+            android:text="@string/adp_dept_text"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/main_cs_btn"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_cs_btn"
+            android:text="@string/cs_dept_text"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/main_se_btn"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_footer_tv"
+        android:text="@string/developed_by_unknown_tv"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+</RelativeLayout>

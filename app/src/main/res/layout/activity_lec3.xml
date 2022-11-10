@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lec3_main_rl"
+    tools:context=".Lec3.Lec3Activity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_value_et"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_the_first_value_et"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_value_et"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:hint="@string/enter_the_second_value_et"
+        android:layout_below="@id/first_value_et"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate_btn"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="@string/calculate_btn"
+        android:layout_below="@id/second_value_et"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_tv"
+        android:layout_below="@id/calculate_btn"
+        android:text="@string/result_tv"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+</RelativeLayout>

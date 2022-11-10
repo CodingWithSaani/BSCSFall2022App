@@ -1,0 +1,28 @@
+
+//Lecture 3
+-> How to create sub package
+-> How to add a new activity
+-> Package in Kotlin file
+-> AppCompactActivity
+-> onCreate
+-> Bundle
+-> Nullable
+-> super keyword
+-> saveInstanceState
+-> setContentView
+-> override
+
+
+//Lecture 4
+-> Passing data from one activity to another using intents
+-> Serialization of an object
+-> Assignment 4.1: How to pass a class object from one activity to another activity
+-> Adapter, AdapterView
+-> Adapter Types ArrayAdapter, CursorAdapter, BaseAdapter
+-> AdapterView Types ListView, GridView, Spinner
+-> Assignment 4.2:Create a new screen to display item's data from the list of parent/sender
+   activity.
+   Hint: use the onItemClickListener to accomplish the task.
+
+
+
