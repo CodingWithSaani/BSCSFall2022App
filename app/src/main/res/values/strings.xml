@@ -18,6 +18,12 @@
     <string name="lecture_4_adapter_btn">Lecture 4 Adapter Working</string>
     <string name="enter_the_message_here_et">Enter the message here</string>
     <string name="send_sms">SEND SMS</string>
+    <string name="move_back_btn">Move Back</string>
+    <string name="lecture_5_a_btn">Lecture 5 List Working</string>
+    <string name="enter_the_car_name_here_et">Enter the car name here</string>
+    <string name="enter_the_car_model_here_et">Enter the car model here</string>
+    <string name="send_car_information_btn_text">Send Car Information</string>
+    <string name="lecture_5_b_btn">Lecture 5 Serialization</string>
 
 
 </resources>

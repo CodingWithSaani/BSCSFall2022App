@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/data_sender_main_rl"
+    android:padding="10dp"
+    tools:context=".Lec5.Serialization.DataSenderActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_sender_main_car_name_et"
+        android:inputType="text"
+        android:maxLength="10"
+        android:hint="@string/enter_the_car_name_here_et"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_sender_main_car_model_et"
+        android:inputType="number"
+        android:maxLength="4"
+        android:hint="@string/enter_the_car_model_here_et"
+        android:layout_below="@id/data_sender_main_car_name_et"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/data_sender_send_car_information_btn"
+        android:text="@string/send_car_information_btn_text"
+        android:layout_below="@id/data_sender_main_car_model_et"
+        />
+</RelativeLayout>

@@ -9,6 +9,8 @@ import com.tutorials180.bscsfall2022app.Lec2.Lec2Activity
 import com.tutorials180.bscsfall2022app.Lec3.Lec3Activity
 import com.tutorials180.bscsfall2022app.Lec4.AdapterWorking.BuiltInAdapterActivity
 import com.tutorials180.bscsfall2022app.Lec4.StarterActivity
+import com.tutorials180.bscsfall2022app.Lec5.Serialization.DataSenderActivity
+import com.tutorials180.bscsfall2022app.Lec5.WorkingWithList.WorkingWithListItemListenerActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var lec2Btn:Button
@@ -16,6 +18,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var lec4Btn:Button
     private lateinit var lec4bBtn:Button
+
+    private lateinit var lec5aBtn:Button
+    private lateinit var lec5bBtn:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +39,9 @@ class MainActivity : AppCompatActivity() {
             lec4Btn = findViewById(R.id.lec_4_btn)
             lec4bBtn = findViewById(R.id.lec_4_b_btn)
 
+            lec5aBtn = findViewById(R.id.lec_5_a_btn)
+            lec5bBtn = findViewById(R.id.lec_5_b_btn)
+
             lec2Btn.setOnClickListener {
                 moveToLecture2()
             }
@@ -48,10 +56,41 @@ class MainActivity : AppCompatActivity() {
             lec4bBtn.setOnClickListener {
                 moveToLecture4b()
             }
+
+
+            lec5aBtn.setOnClickListener {
+                moveToLecture5a()
+            }
+
+            lec5bBtn.setOnClickListener {
+                moveToLecture5b()
+            }
         }
         catch (ex:Exception)
         {
             Toast.makeText(MainActivity@this, "MainScreen: ${ex.message}", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private fun moveToLecture5b() {
+        try {
+            var objIntent = Intent(MainActivity@this, DataSenderActivity::class.java)
+            startActivity(objIntent)
+        }
+        catch (ex:Exception)
+        {
+            Toast.makeText(MainActivity@this, "moveToLecture5a: ${ex.message}", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private fun moveToLecture5a() {
+        try {
+            var objIntent = Intent(MainActivity@this, WorkingWithListItemListenerActivity::class.java)
+            startActivity(objIntent)
+        }
+        catch (ex:Exception)
+        {
+            Toast.makeText(MainActivity@this, "moveToLecture5a: ${ex.message}", Toast.LENGTH_SHORT).show();
         }
     }
 

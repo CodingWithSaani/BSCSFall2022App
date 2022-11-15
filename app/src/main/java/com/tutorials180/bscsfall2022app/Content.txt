@@ -24,5 +24,9 @@
    activity.
    Hint: use the onItemClickListener to accomplish the task.
 
-
+//Lecture 5
+-> Assignment 1, Assignment 2. Checked
+-> Passing class object data from one activity to another using the concept of Serialization
+-> Use of onItemClickListener with ListView
+-> Quiz 1: Design the profile image
 
