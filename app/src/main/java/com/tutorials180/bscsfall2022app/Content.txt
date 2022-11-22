@@ -23,6 +23,8 @@
 -> Assignment 4.2:Create a new screen to display item's data from the list of parent/sender
    activity.
    Hint: use the onItemClickListener to accomplish the task.
+-> Working with request permission
+-> onRequestPermissionResult
 
 //Lecture 5
 -> Assignment 1, Assignment 2. Checked
@@ -30,3 +32,38 @@
 -> Use of onItemClickListener with ListView
 -> Quiz 1: Design the profile image
 
+
+//Lecture 6
+-> ViewBinding
+    --Enabling view binding
+    --Declaring and initializing the Binder object in an activity class
+-> GeoLocation
+   --Location Manager
+     --requestLocationUpdates method
+   --Location Listener
+     --onLocationChanged
+   --Geocoder
+     --getFromLocation method
+   --Reverse Geo Coding
+   --Permission Management
+     --Checking the permission using ActivityCompat class
+     --Requesting user permission using ActivityCompat class
+-> Room Lib
+   --Introduction
+   --Setup
+     --Room Annotation Preprocessor
+     --Room Kotlin Plugin
+   --Advantages over legacy SQLite Lib
+   --Primary Components
+     --Database
+     --Entities
+     --Data access object - DAO
+-> Assignment
+   -) Come prepared with following topics
+      -what are fragments in android and why do we use these into android application
+      -create an android application that depicts the use of fragments in android
+   -) Create an android application to perform geo coding.
+
+   * Please bring your laptops in next class to show your assignments.
+
+END - LEC 6

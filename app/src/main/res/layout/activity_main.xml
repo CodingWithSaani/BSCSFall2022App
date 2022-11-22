@@ -64,6 +64,14 @@
             android:layout_marginEnd="10dp"
             android:text="@string/lecture_5_b_btn" />
 
+        <Button
+            android:id="@+id/lec_6_a_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lec_5_b_btn"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/lecture_6_a_btn" />
     </RelativeLayout>
 
 </ScrollView>

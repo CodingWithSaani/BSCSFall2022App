@@ -50,12 +50,14 @@ class SMSWorkingActivity : AppCompatActivity() {
                if(ActivityCompat.checkSelfPermission(applicationContext,
                android.Manifest.permission.SEND_SMS)==PackageManager.PERMISSION_GRANTED)
                {
-                   mSmsManager.sendTextMessage("009021111111",null,
-                   smsContentET.text.toString(),null,null)
+                   sendSMSNow()
                }
                else
                {
-
+                    ActivityCompat.requestPermissions(SMSWorkingActivity@this,
+                    arrayOf(android.Manifest.permission.SEND_SMS),
+                    102
+                        )
                }
 
 
@@ -69,6 +71,38 @@ class SMSWorkingActivity : AppCompatActivity() {
         catch (ex:Exception)
         {
             Toast.makeText(SMSWorkingActivity@this, "${ex.message}", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private fun sendSMSNow() {
+        try
+        {
+            mSmsManager.sendTextMessage("009021111111",null,
+                smsContentET.text.toString(),null,null)
+        }
+        catch (ex:Exception)
+        {
+            Toast.makeText(SMSWorkingActivity@this, "${ex.message}", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode==102 && grantResults.isNotEmpty())
+        {
+            if(grantResults[0]==PackageManager.PERMISSION_GRANTED)
+            {
+                Toast.makeText(applicationContext, "Permission granted", Toast.LENGTH_SHORT).show();
+                sendSMSNow()
+            }
+        }
+        else
+        {
+
         }
     }
 }
