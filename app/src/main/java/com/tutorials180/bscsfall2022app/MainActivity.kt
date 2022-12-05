@@ -12,6 +12,7 @@ import com.tutorials180.bscsfall2022app.Lec4.StarterActivity
 import com.tutorials180.bscsfall2022app.Lec5.Serialization.DataSenderActivity
 import com.tutorials180.bscsfall2022app.Lec5.WorkingWithList.WorkingWithListItemListenerActivity
 import com.tutorials180.bscsfall2022app.Lec6.GeoLocationActivity
+import com.tutorials180.bscsfall2022app.Lec7.RoomWorking.RoomWorkingActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var lec2Btn:Button
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var lec5bBtn:Button
 
     private lateinit var lec6aBtn:Button
+    private lateinit var lec7aBtn:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             lec5bBtn = findViewById(R.id.lec_5_b_btn)
 
             lec6aBtn = findViewById(R.id.lec_6_a_btn)
+            lec7aBtn = findViewById(R.id.lec_7_a_btn)
 
             lec2Btn.setOnClickListener {
                 moveToLecture2()
@@ -73,10 +77,25 @@ class MainActivity : AppCompatActivity() {
             lec6aBtn.setOnClickListener {
                 moveToLecture6a()
             }
+
+            lec7aBtn.setOnClickListener {
+                moveToLecture7a()
+            }
         }
         catch (ex:Exception)
         {
             Toast.makeText(MainActivity@this, "MainScreen: ${ex.message}", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private fun moveToLecture7a() {
+        try {
+            var objIntent = Intent(MainActivity@this, RoomWorkingActivity::class.java)
+            startActivity(objIntent)
+        }
+        catch (ex:Exception)
+        {
+            Toast.makeText(MainActivity@this, "moveToLecture6a: ${ex.message}", Toast.LENGTH_SHORT).show();
         }
     }
 

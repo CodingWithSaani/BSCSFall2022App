@@ -29,6 +29,9 @@
     <string name="get_location_btn">Get Location</string>
     <string name="lecture_6_a_btn">Lecture 6 Geo Location</string>
     <string name="address_tv">Address:</string>
+    <string name="add_record_btn">Add Record</string>
+    <string name="get_record_btn">Get Record</string>
+    <string name="lecture_7_a_btn">Lecture 7 Room</string>
 
 
 </resources>

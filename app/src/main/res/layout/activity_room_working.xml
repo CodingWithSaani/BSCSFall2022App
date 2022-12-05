@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Lec7.RoomWorking.RoomWorkingActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/room_working_add_record_btn"
+        android:text="@string/add_record_btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/room_working_get_record_btn"
+        android:text="@string/get_record_btn"
+
+        android:layout_below="@id/room_working_add_record_btn"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/room_working_record_tv"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/room_working_get_record_btn"
+        />
+
+
+</RelativeLayout>

@@ -67,3 +67,24 @@
    * Please bring your laptops in next class to show your assignments.
 
 END - LEC 6
+LEC 7
+--> Deep dive into Room Lib and its components.
+    --> Implementing Entities
+        -> Annotations
+        -> Data class
+        -> tableName, ColumnInfo, PrimaryKey annotations
+    --> Implementing DAOs
+        -> interfaces
+        -> Query, insert annotation
+        -> Dao Annotation
+    --> Implementing Database
+        -> Abstract class
+        -> Database annotations and entities, version of database
+        -> RoomDatabase class
+    --> Creating Database object
+    --> Inserting records
+    --> Retrieving records
+
+Assignment:
+    What is an abstract class?
+    What is difference between abstract class and an interface
